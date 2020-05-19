@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container {
+    margin:auto;
+    max-width: 1000px;
+}
+
+header {
+    background-color:#48C5CE;
+    text-align: center;
+    padding:10px;
+
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+
+.formContainer {
+    max-width: 250px;
+    background-color: hsl(0, 0%, 100%,0.7);
+    float: right;
+    padding:20px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    
+}
+
+.margin-bottom {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border:none;
+}
+
+input[type="submit"] {
+    text-transform: uppercase;
+    color: white;
+    background-color:#48C5CE;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    background-image: url(images/people.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    /* zerei o seletor padrão de todos os tipos de navegadores */
+    background-image:url(images/arrow.jpg);
+    /* adicionei a imagem de seletor que eu quero que valha para
+    todos os tipos de navegadores */
+    background-repeat: no-repeat;
+    /* quero apenas UM seletor, então tiro o repeat */
+    background-position-x: calc(100% - 10px);
+    /* Cálculo em CSS. Como funciona? Eu pedi que no eixo x, o meu
+    seletor vá a 100% (até o final do elemento) e volte 10px */
+    background-position-y: center;
+    /* No eixo y do elemento, quero que ele fique centralizado */
+}
